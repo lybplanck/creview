@@ -4,17 +4,37 @@ int main()
 {
     char str[21];
     gets(str);
-    int cnt[128]={0};
-    int length=strlen(str);
-    int errocount=0;
-    for(int i=0;i<length;i++)
+    int len=strlen(str);
+    int cnt=0;
+
+    if(str[0]>='0'&&str[0]<='9')
     {
-        cnt[str[i]]++;
+        printf("no");
+        return 0;
     }
-    for(int i=0;i<length;i++)
+
+
+    
+    
+        for(int i=0;str[i]!='\0';i++)
     {
-        if(cnt[str[i]])
+        
+        if(str[i]>='a'&&str[i]<='z'||str[i]>='A'&&str[i]<='Z'||str[i]>='0'&&str[i]<='9'||str[i]=='_')
+        {
+            cnt++;
+        }
     }
+    if(cnt ==len)
+    {
+        printf("yes");
+    }
+    else
+    {
+        printf("no");
+    }
+   
+    
+    
     return 0;
 }
 //  合法C标识符

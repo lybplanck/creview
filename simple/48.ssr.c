@@ -7,11 +7,11 @@ int main() {
     gets(s);
     
     for (int i = 0; s[i] != '\0'; i++) {
-        char_count[s[i] - 'a']++;
+        char_count[s[i] - 97]++;
     }
 	    
     for (int i = 0; s[i] != '\0'; i++) {
-        if (char_count[s[i] - 'a'] == 1) {
+        if (char_count[s[i] - 97] == 1) {
             printf("%c", s[i]);
             return 0;
         }

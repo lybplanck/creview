@@ -6,19 +6,19 @@
 int main() {
     char str[200];
     int appeared[128] = {0};
-
     gets(str);
 
-    int length = strlen(str);
+    int length = strlen(str);//长度
     int uniqueCount = 0;
 
-    for (int i = 0; i < length; i++) {
+    for (int i = 0; str[i]!='\0'; i++) {
         appeared[str[i]]++;
-    }
+    }//遍历一遍
 
-    for (int i = 0; i < length; i++) {
+    for (int i = 0;str[i]!='\0'; i++) {
         if (appeared[str[i]] == 1) {
-            str[uniqueCount++] = str[i];
+            str[uniqueCount] = str[i];
+            uniqueCount++;
         }
     }
 

@@ -19,7 +19,7 @@ int sushu(int b)
 }
 int check(int a)
 {
-    if(a%3==1&&a%7==2&&a%11==3)
+    if(a%5==1&&a%7==3&&a%11==5)
     {
         return 1;
     }
@@ -39,7 +39,7 @@ int main()
             printf("%d",i);
             cnt++;
         }
-          if(cnt==1)break;//值得注意：循环仅输出最小结果用这种方法
+          if(cnt==1) break;
           
     
    

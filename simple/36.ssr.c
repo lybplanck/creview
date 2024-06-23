@@ -2,7 +2,7 @@
 int gcd(int a,int b)
 {
     int r;
-    while(b)
+    while(b)//值得注意：最大公约数
     {
         r=a%b;
         a=b;

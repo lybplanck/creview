@@ -2,7 +2,7 @@
 #include <string.h>
 int isPalindrome(int num) {
     char str[20]; 
-    sprintf(str, "%d", num); 
+    sprintf(str, "%d", num); //值得注意：将整形转换成字符
     int len = strlen(str);
     for (int i = 0; i < len / 2; i++) {
         if (str[i] != str[len - 1 - i]) {
