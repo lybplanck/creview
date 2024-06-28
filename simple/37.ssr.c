@@ -22,6 +22,7 @@ int main()
     {
         renderLine(zheng-i, 2*i-1, n);
     }
+    
     for(int i=1;i<=fu;i++)
 	{
         renderLine(i, line-2*i, n);

@@ -14,6 +14,13 @@ int main()
         if(s!=0)
         {
             printf("%d", s < 0 ? s * -1 : s);
+            // if(s<0)
+            // {
+            //     printf("%d",s*(-1));
+            // }
+            // else{
+            //      printf("%d",s);
+            // }
         }
         n=(n-s)/10; 
     }

@@ -7,7 +7,18 @@ int gcd(int a,int b)
         r=a%b;
         a=b;
         b=r;
-    }
+    //    int gdc(int a,int b)
+    //    {
+    //     int r;
+    //     while(b)
+    //     {
+    //         r=a%b;
+    //         a=b;
+    //         b=r;
+    //     }
+    //     return a;
+    //    }
+     }
     return a;
 }
 int lcm(int a,int b)

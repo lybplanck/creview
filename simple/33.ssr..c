@@ -8,6 +8,8 @@ int main()
     {
         c=c*i;
 
+        //1=1*n
+        //n=n*n-1*...n-n-1>>1
         
     }
     printf("%d",c);

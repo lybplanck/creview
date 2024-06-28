@@ -8,6 +8,7 @@ int main()
     {
         scanf("%d",&a[i]);
     }
+    
     for(int i=0;i<n-1;i+=2)
     {
         if((a[i]%2)!=(a[i+1]%2))
